@@ -1,0 +1,8 @@
+#!/usr/bin/env ansible-playbook
+
+- name: WORKSTATION
+  hosts: workstation
+
+  tasks:
+  - meta: end_play
+   

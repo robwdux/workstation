@@ -15,11 +15,11 @@ SHELL := bash
 .DEFAULT_GOAL := help
 
 .PHONY: all
-all: setup install
+all: setup install ## setup and install
 
-.PHONY: all
-install:
-	
+.PHONY: install
+install: ## workstation configuration
+	./workstation.yml
 
 .PHONY: setup
 setup: deps venv ## setup project with python virtualenv

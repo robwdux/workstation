@@ -1,8 +1,10 @@
 ANSIBLE_VERSION=2.5.0.0
 
 # REFERENCES
+# manual:
+#   https://www.gnu.org/software/make/manual/
 # style: 
-#   http://clarkgrubb.com/makefile-style-guide#shell-scripts
+#   http://clarkgrubb.com/makefile-style-guide
 # help:
 #   (simple) https://marmelab.com/blog/2016/02/29/auto-documented-makefile.html
 #   (advanced) https://www.cmcrossroads.com/article/self-documenting-makefiles
@@ -11,6 +13,13 @@ MAKEFLAGS += --warn-undefined-variables
 SHELL := bash
 .SHELLFLAGS := -eu -o pipefail -c
 .DEFAULT_GOAL := help
+
+.PHONY: all
+all: setup install
+
+.PHONY: all
+install:
+	
 
 .PHONY: setup
 setup: deps venv ## setup project with python virtualenv

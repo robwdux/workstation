@@ -1,8 +1,10 @@
 #!/usr/bin/env ansible-playbook
 
 - name: WORKSTATION
+  gather_facts: yes
   hosts: workstation
 
   tasks:
+  - debug: var=ansible_version
   - meta: end_play
    

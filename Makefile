@@ -19,7 +19,7 @@ all: setup install ## setup and install
 
 .PHONY: install
 install: ## workstation configuration
-	./workstation.yml
+	.venv/bin/ansible-playbook ./workstation.yml -v
 
 .PHONY: setup
 setup: deps venv ## setup project with python virtualenv

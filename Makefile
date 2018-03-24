@@ -12,6 +12,7 @@ SHELL := bash
 .SHELLFLAGS := -eu -o pipefail -c
 .DEFAULT_GOAL := help
 
+.PHONY: setup
 setup: deps venv ## setup project with python virtualenv
 	.venv/bin/pip install ansible==$(ANSIBLE_VERSION)
 

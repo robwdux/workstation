@@ -1,0 +1,7 @@
+---
+
+- name: MAIN | include distro_pkg tasks
+  include_tasks: distro_pkg.yml
+
+#- name: MAIN | include google chrome tasks
+#  include_tasks: google_chrome.yml

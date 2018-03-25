@@ -3,6 +3,10 @@
 - name: WORKSTATION
   gather_facts: yes
   hosts: workstation
+  become: true
+
+  roles:
+  - role: fedora-workstation
 
   tasks:
   - debug: var=ansible_version

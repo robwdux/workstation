@@ -2,11 +2,11 @@
 
 Ansible project to handle setup and configuration of a Linux workstation.
 
-1. [Usage](#Usage)
-2. [Capabilities](#Capabilities)
-3. [Features](#Features)
-4. [Development](#Development)
-5. [Misc](#Misc)
+1. [Usage](#usage)
+2. [Capabilities](#capabilities)
+3. [Features](#features)
+4. [Development](#development)
+5. [Misc](#misc)
 
 ## Usage
 
